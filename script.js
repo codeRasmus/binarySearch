@@ -21,7 +21,7 @@ function binarySearch(sortedArr, v, low, high) {
       high = mid - 1;
     }
   }
-  return null; // Return null if the value is not found
+  return null;
 }
 
 function sortArr(arr) {
