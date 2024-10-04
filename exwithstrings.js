@@ -29,7 +29,7 @@ function binarySearch(sortedArr, v, low, high) {
       high = mid - 1;
     }
   }
-  return null; // Return null if the value is not found
+  return null;
 }
 
 function sortArr(arr) {
@@ -41,9 +41,9 @@ function sortArr(arr) {
   return arr;
 }
 
-const index = binarySearch(sortedArr, v, low, high);
+const index = binarySearch(sortedArr, v, low, high) + 1;
 if (index !== null) {
-  console.log(`Værdien ${v} befinder sig på #${index + 1} plads i arrayet`);
+  console.log(`Værdien ${v} befinder sig på #${index} plads`);
 } else {
-  console.log(`Værdien ${v} findes ikke i arrayet`);
+  console.log(`Værdien ${v} findes ikke`);
 }
